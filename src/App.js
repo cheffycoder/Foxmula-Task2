@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { Provider } from "react-redux"
+import store from './redux/store'
+import icon from './sun icon.svg';
+import TemperatureContainer from "./Components/TemperatureContainer"
 import './App.css';
 
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        
+        
+        <img src={icon} className="back-icon" alt="icon" style={{ top: "5vh", left: "3vw" }} />
+        <TemperatureContainer />
+        <img src={icon} className="back-icon" alt="icon" style={{ bottom: "5vh", right: "3vw" }} />
+      </div>
+    </Provider>
   );
 }
 
