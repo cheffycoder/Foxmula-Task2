@@ -1,24 +1,69 @@
-body{
-  margin: 0;
+html{
+  box-sizing: border-box;
 }
 
+
+body{
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: orange;
+}
+
+
+h1{
+  text-align: center;
+  font-weight: 500;
+}
+
+
 .App {
-  background-color: #ffa637;
   height: 100vh;
   width: 100vw;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  color:#281a03;
-  font-family: 'Open Sans';
-  font-weight: 600;
+  align-items: center;
+
+  color:#fff;
+  font-family: 'Arial';
 }
+
 
 .back-icon {
   position: absolute;
-  width: 20vh;
-  height: 20vh;
-  pointer-events: none;
+  width: 10vh;
+  height: 10vh;
 }
 
 
+input{
+  border-radius: 4px;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  margin-right: 0.4rem;
+}
+
+
+.input-area{
+  display: flex;
+  flex-direction: row;
+}
+
+
+button{
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 2rem;
+
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+}
+
+
+button:hover{
+  filter: brightness(110%);
+}
